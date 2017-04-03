@@ -1,0 +1,24 @@
+logLevel = "log-level"
+################################################################
+# Web configuration backend
+################################################################
+[web]
+address = ":8080"
+
+################################################################
+# ECS configuration backend
+################################################################
+# Enable ECS configuration backend
+[ecs]
+# ECS Cluster Name
+Cluster = "ecs-cluster-name"
+# Enable watch ECS changes
+Watch = ecs-watch-changes
+# Polling interval (in seconds)
+RefreshSeconds = ecs-refresh-seconds
+# Expose ECS services by default in traefik
+ExposedByDefault = ecs-exposed-by-default
+# Region to use when connecting to AWS
+Region = "ecs-cluster-region"
+# Default domain used
+Domain = "ecs-cluster-domain"
